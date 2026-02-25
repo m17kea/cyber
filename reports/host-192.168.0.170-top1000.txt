@@ -1,0 +1,40 @@
+# Nmap 7.98 scan initiated Sun Feb 15 22:20:12 2026 as: /usr/lib/nmap/nmap -Pn -sV --top-ports 1000 --open -oN - 192.168.0.170
+Nmap scan report for 192.168.0.170
+Host is up (1.0s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+80/tcp open  http
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port80-TCP:V=7.98%I=7%D=2/15%Time=699246A8%P=aarch64-unknown-linux-gnu%
+SF:r(NULL,8B,"HTTP/1\.1\x20408\x20Request\x20Timeout\r\nConnection:\x20clo
+SF:se\r\n\r\n<html><head><title>Nucleus\x20Server\x20Error</title></head><
+SF:b>408:\x20Request\x20Timeout</b></html>")%r(GetRequest,80,"HTTP/1\.1\x2
+SF:0404\x20Not\x20Found\r\nContent-Length:\x2082\r\n\r\n<html><head><title
+SF:>Nucleus\x20Server\x20Error</title></head><b>404:\x20Not\x20Found</b></
+SF:html>")%r(HTTPOptions,80,"HTTP/1\.1\x20404\x20Not\x20Found\r\nContent-L
+SF:ength:\x2082\r\n\r\n<html><head><title>Nucleus\x20Server\x20Error</titl
+SF:e></head><b>404:\x20Not\x20Found</b></html>")%r(RTSPRequest,83,"HTTP/1\
+SF:.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n<html><head>
+SF:<title>Nucleus\x20Server\x20Error</title></head><b>400:\x20Bad\x20Reque
+SF:st</b></html>")%r(X11Probe,83,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nCo
+SF:nnection:\x20close\r\n\r\n<html><head><title>Nucleus\x20Server\x20Error
+SF:</title></head><b>400:\x20Bad\x20Request</b></html>")%r(FourOhFourReque
+SF:st,80,"HTTP/1\.1\x20404\x20Not\x20Found\r\nContent-Length:\x2082\r\n\r\
+SF:n<html><head><title>Nucleus\x20Server\x20Error</title></head><b>404:\x2
+SF:0Not\x20Found</b></html>")%r(GenericLines,83,"HTTP/1\.1\x20400\x20Bad\x
+SF:20Request\r\nConnection:\x20close\r\n\r\n<html><head><title>Nucleus\x20
+SF:Server\x20Error</title></head><b>400:\x20Bad\x20Request</b></html>")%r(
+SF:RPCCheck,83,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close
+SF:\r\n\r\n<html><head><title>Nucleus\x20Server\x20Error</title></head><b>
+SF:400:\x20Bad\x20Request</b></html>")%r(DNSVersionBindReqTCP,83,"HTTP/1\.
+SF:1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n<html><head><
+SF:title>Nucleus\x20Server\x20Error</title></head><b>400:\x20Bad\x20Reques
+SF:t</b></html>")%r(DNSStatusRequestTCP,83,"HTTP/1\.1\x20400\x20Bad\x20Req
+SF:uest\r\nConnection:\x20close\r\n\r\n<html><head><title>Nucleus\x20Serve
+SF:r\x20Error</title></head><b>400:\x20Bad\x20Request</b></html>")%r(Help,
+SF:83,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n<
+SF:html><head><title>Nucleus\x20Server\x20Error</title></head><b>400:\x20B
+SF:ad\x20Request</b></html>");
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Feb 15 22:20:48 2026 -- 1 IP address (1 host up) scanned in 35.18 seconds

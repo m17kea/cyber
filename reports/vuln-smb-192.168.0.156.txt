@@ -1,0 +1,13 @@
+# Nmap 7.98 scan initiated Sun Feb 15 22:27:15 2026 as: /usr/lib/nmap/nmap -Pn -p139,445 --script smb-vuln* --script-timeout 20s -oN /reports/vuln-smb-192.168.0.156.txt 192.168.0.156
+Nmap scan report for 192.168.0.156
+Host is up (0.0057s latency).
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+445/tcp open  microsoft-ds
+
+Host script results:
+|_smb-vuln-ms10-061: Could not negotiate a connection:SMB: ERROR: Server returned less data than it was supposed to (one or more fields are missing); aborting [14]
+|_smb-vuln-ms10-054: false
+
+# Nmap done at Sun Feb 15 22:27:21 2026 -- 1 IP address (1 host up) scanned in 5.61 seconds

@@ -1,0 +1,73 @@
+# Nmap 7.98 scan initiated Sun Feb 15 22:27:33 2026 as: /usr/lib/nmap/nmap -Pn -p80,443,8080 --script vuln,http-vuln* --script-timeout 20s --host-timeout 90s -oN /reports/vuln-web-shortlist.txt 192.168.0.170 192.168.0.186 192.168.0.190 192.168.0.220 192.168.0.230 192.168.0.241 192.168.0.248
+Nmap scan report for 192.168.0.170
+Host is up (0.25s latency).
+
+PORT     STATE  SERVICE
+80/tcp   open   http
+443/tcp  closed https
+8080/tcp closed http-proxy
+
+Nmap scan report for 192.168.0.186
+Host is up (0.59s latency).
+
+PORT     STATE  SERVICE
+80/tcp   closed http
+443/tcp  open   https
+|_ssl-ccs-injection: No reply from server (TIMEOUT)
+|_http-vuln-cve2014-3704: ERROR: Script execution failed (use -d to debug)
+|_http-aspnet-debug: ERROR: Script execution failed (use -d to debug)
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+8080/tcp closed http-proxy
+
+Nmap scan report for 192.168.0.190
+Host is up (0.63s latency).
+
+PORT     STATE  SERVICE
+80/tcp   closed http
+443/tcp  open   https
+|_ssl-ccs-injection: No reply from server (TIMEOUT)
+|_http-vuln-cve2014-3704: ERROR: Script execution failed (use -d to debug)
+|_http-aspnet-debug: ERROR: Script execution failed (use -d to debug)
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+8080/tcp closed http-proxy
+
+Nmap scan report for 192.168.0.220
+Host is up (0.24s latency).
+
+PORT     STATE  SERVICE
+80/tcp   open   http
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+443/tcp  closed https
+8080/tcp closed http-proxy
+
+Nmap scan report for 192.168.0.230
+Host is up (0.057s latency).
+
+PORT     STATE    SERVICE
+80/tcp   open     http
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+443/tcp  open     https
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+8080/tcp filtered http-proxy
+
+Nmap scan report for 192.168.0.241
+Host is up (0.24s latency).
+
+PORT     STATE  SERVICE
+80/tcp   closed http
+443/tcp  closed https
+8080/tcp open   http-proxy
+
+Nmap scan report for 192.168.0.248
+Host is up (0.51s latency).
+
+PORT     STATE  SERVICE
+80/tcp   closed http
+443/tcp  open   https
+|_http-aspnet-debug: ERROR: Script execution failed (use -d to debug)
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+8080/tcp closed http-proxy
+
+# Nmap done at Sun Feb 15 22:28:31 2026 -- 7 IP addresses (7 hosts up) scanned in 57.70 seconds

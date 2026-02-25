@@ -1,0 +1,35 @@
+version: 3
+name: cyber-kali
+displayName: Cyber Kali MCP Catalog
+registry:
+  kali-linux:
+    title: Kali Linux
+    description: Kali Linux MCP server running in a Docker container.
+    type: server
+    dateAdded: "2026-02-15T00:00:00Z"
+    image: cyber-kali-mcp:latest
+    ref: ""
+    readme: "https://github.com/m17kea/cyber"
+    source: "https://github.com/m17kea/cyber"
+    icon: "https://www.kali.org/images/kali-logo.svg"
+    tools:
+      - name: run_command
+      - name: get_system_info
+      - name: list_security_tools
+      - name: nmap_top_ports_scan
+      - name: whois_lookup
+      - name: dig_lookup
+      - name: ping_check
+    env:
+      - name: MCP_TRANSPORT
+        value: stdio
+    prompts: 0
+    resources: {}
+    metadata:
+      category: security
+      tags:
+        - kali
+        - security
+        - pentest
+      license: MIT
+      owner: m17kea

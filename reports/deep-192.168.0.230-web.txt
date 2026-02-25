@@ -1,0 +1,52 @@
+# Nmap 7.98 scan initiated Sun Feb 15 22:43:21 2026 as: /usr/lib/nmap/nmap -Pn -p80,443 --script ssl-enum-ciphers,ssl-cert,http-title,http-server-header,http-methods,http-enum,http-security-headers --script-timeout 25s -oN /reports/deep-192.168.0.230-web.txt 192.168.0.230
+Nmap scan report for 192.168.0.230
+Host is up (0.047s latency).
+
+PORT    STATE SERVICE
+80/tcp  open  http
+|_http-title: Did not follow redirect to https://192.168.0.230/
+| http-security-headers: 
+|   Cache_Control: 
+|_    Header: Cache-Control: no-cache, no-store
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+443/tcp open  https
+| ssl-cert: Subject: commonName=9274b27780130bfc56ad3d701205dbea/organizationName=Tesla/stateOrProvinceName=California/countryName=US
+| Subject Alternative Name: DNS:teg, DNS:powerwall, DNS:powerpack, IP Address:192.168.90.1, IP Address:192.168.90.2, IP Address:192.168.91.1
+| Issuer: commonName=9274b27780130bfc56ad3d701205dbea CA/organizationName=Tesla/stateOrProvinceName=California/countryName=US
+| Public Key type: ec
+| Public Key bits: 256
+| Signature Algorithm: ecdsa-with-SHA256
+| Not valid before: 2024-11-01T12:25:57
+| Not valid after:  2049-10-26T12:25:56
+| MD5:     3e94 c6ba 5e08 b491 9685 5be3 176d d2e3
+| SHA-1:   3295 bec1 a312 f1c2 f2f1 5844 c175 da9c dc4a fafb
+|_SHA-256: 7313 89df d771 3635 dfa9 6c4f 0ec1 7fa9 0aec 0578 1c6a 9b3e 7598 c12e bc2c 487b
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+| http-security-headers: 
+|   Strict_Transport_Security: 
+|     HSTS not configured in HTTPS Server
+|   Cache_Control: 
+|_    Header: Cache-Control: no-cache, no-store
+|_http-title: Tesla Powerwall
+| ssl-enum-ciphers: 
+|   TLSv1.2: 
+|     ciphers: 
+|       TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256 (secp256r1) - A
+|       TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 (secp256r1) - A
+|       TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384 (secp256r1) - A
+|       TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA (secp256r1) - A
+|       TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA (secp256r1) - A
+|     compressors: 
+|       NULL
+|     cipher preference: server
+|   TLSv1.3: 
+|     ciphers: 
+|       TLS_AKE_WITH_CHACHA20_POLY1305_SHA256 (ecdh_x25519) - A
+|       TLS_AKE_WITH_AES_128_GCM_SHA256 (ecdh_x25519) - A
+|       TLS_AKE_WITH_AES_256_GCM_SHA384 (ecdh_x25519) - A
+|     cipher preference: server
+|_  least strength: A
+
+# Nmap done at Sun Feb 15 22:43:50 2026 -- 1 IP address (1 host up) scanned in 29.09 seconds

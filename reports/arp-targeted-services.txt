@@ -1,0 +1,249 @@
+# Nmap 7.98 scan initiated Sun Feb 15 22:26:17 2026 as: /usr/lib/nmap/nmap -n -Pn -sV --open --max-retries 1 --host-timeout 15s -p 21,22,23,53,80,110,139,143,443,445,3389,5900,8080,8443 -iL /reports/arp-live-hosts.txt -oN /reports/arp-targeted-services.txt
+Nmap scan report for 192.168.0.1
+Host is up (0.70s latency).
+Skipping host 192.168.0.1 due to host timeout
+Nmap scan report for 192.168.0.115
+Host is up (1.4s latency).
+Skipping host 192.168.0.115 due to host timeout
+Nmap scan report for 192.168.0.124
+Host is up (0.74s latency).
+Skipping host 192.168.0.124 due to host timeout
+Nmap scan report for 192.168.0.146
+Host is up (1.2s latency).
+Skipping host 192.168.0.146 due to host timeout
+Nmap scan report for 192.168.0.156
+Host is up (0.83s latency).
+Not shown: 12 closed tcp ports (reset)
+PORT    STATE SERVICE      VERSION
+139/tcp open  netbios-ssn?
+445/tcp open  microsoft-ds Apple Time Capsule smbd
+Service Info: Device: storage-misc
+
+Nmap scan report for 192.168.0.159
+Host is up (0.83s latency).
+Skipping host 192.168.0.159 due to host timeout
+Nmap scan report for 192.168.0.162
+Host is up.
+Skipping host 192.168.0.162 due to host timeout
+Nmap scan report for 192.168.0.170
+Host is up (0.95s latency).
+Skipping host 192.168.0.170 due to host timeout
+Nmap scan report for 192.168.0.176
+Host is up (0.96s latency).
+Not shown: 13 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+53/tcp open  domain  Apple device dnsd
+
+Nmap scan report for 192.168.0.177
+Host is up (0.96s latency).
+Not shown: 13 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 10.2 (protocol 2.0)
+
+Nmap scan report for 192.168.0.186
+Host is up (1.0s latency).
+Skipping host 192.168.0.186 due to host timeout
+Nmap scan report for 192.168.0.190
+Host is up (0.99s latency).
+Skipping host 192.168.0.190 due to host timeout
+Nmap scan report for 192.168.0.199
+Host is up.
+Skipping host 192.168.0.199 due to host timeout
+Nmap scan report for 192.168.0.220
+Host is up (0.95s latency).
+Skipping host 192.168.0.220 due to host timeout
+Nmap scan report for 192.168.0.230
+Host is up (0.023s latency).
+Skipping host 192.168.0.230 due to host timeout
+Nmap scan report for 192.168.0.241
+Host is up (0.96s latency).
+Not shown: 13 closed tcp ports (reset)
+PORT     STATE SERVICE VERSION
+8080/tcp open  http    lighttpd
+
+Nmap scan report for 192.168.0.248
+Host is up (1.1s latency).
+Skipping host 192.168.0.248 due to host timeout
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Feb 15 22:26:51 2026 -- 37 IP addresses (37 hosts up) scanned in 33.78 seconds
+0<h1>404\x20Not\x20Found</h1>\n\x20
+SF:</body>\n</html>\n")%r(HTTPOptions,23F,"HTTP/1\.0\x20404\x20Not\x20Foun
+SF:d\r\nContent-Type:\x20text/html\r\nAccess-Control-Allow-Origin:\x20\*\r
+SF:\nAccess-Control-Allow-Headers:\x20Authorization,\x20Content-Type\r\nCo
+SF:ntent-Length:\x20341\r\nConnection:\x20close\r\nDate:\x20Sun,\x2015\x20
+SF:Feb\x202026\x2022:23:45\x20GMT\r\nServer:\x20KizOs\r\n\r\n<\?xml\x20ver
+SF:sion=\"1\.0\"\x20encoding=\"iso-8859-1\"\?>\n<!DOCTYPE\x20html\x20PUBLI
+SF:C\x20\"-//W3C//DTD\x20XHTML\x201\.0\x20Transitional//EN\"\n\x20\x20\x20
+SF:\x20\x20\x20\x20\x20\x20\"http://www\.w3\.org/TR/xhtml1/DTD/xhtml1-tran
+SF:sitional\.dtd\">\n<html\x20xmlns=\"http://www\.w3\.org/1999/xhtml\"\x20
+SF:xml:lang=\"en\"\x20lang=\"en\">\n\x20<head>\n\x20\x20<title>404\x20Not\
+SF:x20Found</title>\n\x20</head>\n\x20<body>\n\x20\x20<h1>404\x20Not\x20Fo
+SF:und</h1>\n\x20</body>\n</html>\n")%r(FourOhFourRequest,23F,"HTTP/1\.0\x
+SF:20404\x20Not\x20Found\r\nContent-Type:\x20text/html\r\nAccess-Control-A
+SF:llow-Origin:\x20\*\r\nAccess-Control-Allow-Headers:\x20Authorization,\x
+SF:20Content-Type\r\nContent-Length:\x20341\r\nConnection:\x20close\r\nDat
+SF:e:\x20Sun,\x2015\x20Feb\x202026\x2022:23:45\x20GMT\r\nServer:\x20KizOs\
+SF:r\n\r\n<\?xml\x20version=\"1\.0\"\x20encoding=\"iso-8859-1\"\?>\n<!DOCT
+SF:YPE\x20html\x20PUBLIC\x20\"-//W3C//DTD\x20XHTML\x201\.0\x20Transitional
+SF://EN\"\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\"http://www\.w3\.org/TR/xh
+SF:tml1/DTD/xhtml1-transitional\.dtd\">\n<html\x20xmlns=\"http://www\.w3\.
+SF:org/1999/xhtml\"\x20xml:lang=\"en\"\x20lang=\"en\">\n\x20<head>\n\x20\x
+SF:20<title>404\x20Not\x20Found</title>\n\x20</head>\n\x20<body>\n\x20\x20
+SF:<h1>404\x20Not\x20Found</h1>\n\x20</body>\n</html>\n");
+
+Nmap scan report for 192.168.0.170
+Host is up (0.84s latency).
+Not shown: 13 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+80/tcp open  http
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port80-TCP:V=7.98%I=7%D=2/15%Time=69924769%P=aarch64-unknown-linux-gnu%
+SF:r(NULL,8B,"HTTP/1\.1\x20408\x20Request\x20Timeout\r\nConnection:\x20clo
+SF:se\r\n\r\n<html><head><title>Nucleus\x20Server\x20Error</title></head><
+SF:b>408:\x20Request\x20Timeout</b></html>")%r(GetRequest,80,"HTTP/1\.1\x2
+SF:0404\x20Not\x20Found\r\nContent-Length:\x2082\r\n\r\n<html><head><title
+SF:>Nucleus\x20Server\x20Error</title></head><b>404:\x20Not\x20Found</b></
+SF:html>")%r(HTTPOptions,80,"HTTP/1\.1\x20404\x20Not\x20Found\r\nContent-L
+SF:ength:\x2082\r\n\r\n<html><head><title>Nucleus\x20Server\x20Error</titl
+SF:e></head><b>404:\x20Not\x20Found</b></html>")%r(RTSPRequest,83,"HTTP/1\
+SF:.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n<html><head>
+SF:<title>Nucleus\x20Server\x20Error</title></head><b>400:\x20Bad\x20Reque
+SF:st</b></html>")%r(X11Probe,83,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nCo
+SF:nnection:\x20close\r\n\r\n<html><head><title>Nucleus\x20Server\x20Error
+SF:</title></head><b>400:\x20Bad\x20Request</b></html>")%r(FourOhFourReque
+SF:st,10B,"HTTP/1\.1\x20404\x20Not\x20Found\r\nContent-Length:\x2082\r\n\r
+SF:\n<html><head><title>Nucleus\x20Server\x20Error</title></head><b>404:\x
+SF:20Not\x20Found</b></html>HTTP/1\.1\x20408\x20Request\x20Timeout\r\nConn
+SF:ection:\x20close\r\n\r\n<html><head><title>Nucleus\x20Server\x20Error</
+SF:title></head><b>408:\x20Request\x20Timeout</b></html>")%r(GenericLines,
+SF:83,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n<
+SF:html><head><title>Nucleus\x20Server\x20Error</title></head><b>400:\x20B
+SF:ad\x20Request</b></html>")%r(RPCCheck,83,"HTTP/1\.1\x20400\x20Bad\x20Re
+SF:quest\r\nConnection:\x20close\r\n\r\n<html><head><title>Nucleus\x20Serv
+SF:er\x20Error</title></head><b>400:\x20Bad\x20Request</b></html>")%r(DNSV
+SF:ersionBindReqTCP,83,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\
+SF:x20close\r\n\r\n<html><head><title>Nucleus\x20Server\x20Error</title></
+SF:head><b>400:\x20Bad\x20Request</b></html>")%r(DNSStatusRequestTCP,83,"H
+SF:TTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n<html>
+SF:<head><title>Nucleus\x20Server\x20Error</title></head><b>400:\x20Bad\x2
+SF:0Request</b></html>")%r(Help,83,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n
+SF:Connection:\x20close\r\n\r\n<html><head><title>Nucleus\x20Server\x20Err
+SF:or</title></head><b>400:\x20Bad\x20Request</b></html>");
+
+Nmap scan report for 192.168.0.176
+Host is up (0.97s latency).
+Not shown: 13 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+53/tcp open  domain  Apple device dnsd
+
+Nmap scan report for 192.168.0.177
+Host is up (1.00s latency).
+Not shown: 13 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 10.2 (protocol 2.0)
+
+Nmap scan report for 192.168.0.186
+Host is up (1.5s latency).
+Not shown: 13 closed tcp ports (reset)
+PORT    STATE SERVICE    VERSION
+443/tcp open  ssl/https?
+
+Nmap scan report for 192.168.0.190
+Host is up (1.6s latency).
+Not shown: 12 closed tcp ports (reset)
+PORT    STATE SERVICE    VERSION
+22/tcp  open  ssh        OpenSSH 8.5 (protocol 2.0)
+443/tcp open  ssl/https?
+
+Nmap scan report for 192.168.0.220
+Host is up (1.0s latency).
+Not shown: 13 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+80/tcp open  http
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port80-TCP:V=7.98%I=7%D=2/15%Time=69924769%P=aarch64-unknown-linux-gnu%
+SF:r(NULL,8B,"HTTP/1\.1\x20408\x20Request\x20Timeout\r\nConnection:\x20clo
+SF:se\r\n\r\n<html><head><title>Nucleus\x20Server\x20Error</title></head><
+SF:b>408:\x20Request\x20Timeout</b></html>")%r(GetRequest,80,"HTTP/1\.1\x2
+SF:0404\x20Not\x20Found\r\nContent-Length:\x2082\r\n\r\n<html><head><title
+SF:>Nucleus\x20Server\x20Error</title></head><b>404:\x20Not\x20Found</b></
+SF:html>")%r(HTTPOptions,80,"HTTP/1\.1\x20404\x20Not\x20Found\r\nContent-L
+SF:ength:\x2082\r\n\r\n<html><head><title>Nucleus\x20Server\x20Error</titl
+SF:e></head><b>404:\x20Not\x20Found</b></html>")%r(RTSPRequest,83,"HTTP/1\
+SF:.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n<html><head>
+SF:<title>Nucleus\x20Server\x20Error</title></head><b>400:\x20Bad\x20Reque
+SF:st</b></html>")%r(X11Probe,83,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nCo
+SF:nnection:\x20close\r\n\r\n<html><head><title>Nucleus\x20Server\x20Error
+SF:</title></head><b>400:\x20Bad\x20Request</b></html>")%r(FourOhFourReque
+SF:st,80,"HTTP/1\.1\x20404\x20Not\x20Found\r\nContent-Length:\x2082\r\n\r\
+SF:n<html><head><title>Nucleus\x20Server\x20Error</title></head><b>404:\x2
+SF:0Not\x20Found</b></html>")%r(GenericLines,83,"HTTP/1\.1\x20400\x20Bad\x
+SF:20Request\r\nConnection:\x20close\r\n\r\n<html><head><title>Nucleus\x20
+SF:Server\x20Error</title></head><b>400:\x20Bad\x20Request</b></html>")%r(
+SF:RPCCheck,83,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close
+SF:\r\n\r\n<html><head><title>Nucleus\x20Server\x20Error</title></head><b>
+SF:400:\x20Bad\x20Request</b></html>")%r(DNSVersionBindReqTCP,83,"HTTP/1\.
+SF:1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n<html><head><
+SF:title>Nucleus\x20Server\x20Error</title></head><b>400:\x20Bad\x20Reques
+SF:t</b></html>")%r(DNSStatusRequestTCP,83,"HTTP/1\.1\x20400\x20Bad\x20Req
+SF:uest\r\nConnection:\x20close\r\n\r\n<html><head><title>Nucleus\x20Serve
+SF:r\x20Error</title></head><b>400:\x20Bad\x20Request</b></html>")%r(Help,
+SF:83,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n<
+SF:html><head><title>Nucleus\x20Server\x20Error</title></head><b>400:\x20B
+SF:ad\x20Request</b></html>");
+
+Nmap scan report for 192.168.0.230
+Host is up (0.036s latency).
+Not shown: 12 filtered tcp ports (no-response)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT    STATE SERVICE  VERSION
+80/tcp  open  http     Golang net/http server
+443/tcp open  ssl/http Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port80-TCP:V=7.98%I=7%D=2/15%Time=6992476A%P=aarch64-unknown-linux-gnu%
+SF:r(GetRequest,C4,"HTTP/1\.0\x20301\x20Moved\x20Permanently\r\nContent-Ty
+SF:pe:\x20text/html;\x20charset=utf-8\r\nLocation:\x20https:///\r\nDate:\x
+SF:20Sun,\x2015\x20Feb\x202026\x2022:23:38\x20GMT\r\nContent-Length:\x2044
+SF:\r\n\r\n<a\x20href=\"https:///\">Moved\x20Permanently</a>\.\n\n")%r(HTT
+SF:POptions,6F,"HTTP/1\.0\x20301\x20Moved\x20Permanently\r\nLocation:\x20h
+SF:ttps:///\r\nDate:\x20Sun,\x2015\x20Feb\x202026\x2022:23:39\x20GMT\r\nCo
+SF:ntent-Length:\x200\r\n\r\n")%r(RTSPRequest,67,"HTTP/1\.1\x20400\x20Bad\
+SF:x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnecti
+SF:on:\x20close\r\n\r\n400\x20Bad\x20Request")%r(FourOhFourRequest,FA,"HTT
+SF:P/1\.0\x20301\x20Moved\x20Permanently\r\nContent-Type:\x20text/html;\x2
+SF:0charset=utf-8\r\nLocation:\x20https:///nice\x20ports,/Trinity\.txt\.ba
+SF:k\r\nDate:\x20Sun,\x2015\x20Feb\x202026\x2022:23:39\x20GMT\r\nContent-L
+SF:ength:\x2071\r\n\r\n<a\x20href=\"https:///nice\x20ports,/Trinity\.txt\.
+SF:bak\">Moved\x20Permanently</a>\.\n\n")%r(GenericLines,67,"HTTP/1\.1\x20
+SF:400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\
+SF:r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(Help,67,"HTTP/
+SF:1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charse
+SF:t=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(SSLSes
+SF:sionReq,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text
+SF:/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20R
+SF:equest")%r(LPDString,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-
+SF:Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n40
+SF:0\x20Bad\x20Request")%r(SIPOptions,67,"HTTP/1\.1\x20400\x20Bad\x20Reque
+SF:st\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20c
+SF:lose\r\n\r\n400\x20Bad\x20Request")%r(Socks5,67,"HTTP/1\.1\x20400\x20Ba
+SF:d\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnec
+SF:tion:\x20close\r\n\r\n400\x20Bad\x20Request")%r(OfficeScan,A3,"HTTP/1\.
+SF:1\x20400\x20Bad\x20Request:\x20missing\x20required\x20Host\x20header\r\
+SF:nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\
+SF:r\n\r\n400\x20Bad\x20Request:\x20missing\x20required\x20Host\x20header"
+SF:);
+
+Nmap scan report for 192.168.0.241
+Host is up (0.90s latency).
+Not shown: 13 closed tcp ports (reset)
+PORT     STATE SERVICE VERSION
+8080/tcp open  http    lighttpd
+
+Nmap scan report for 192.168.0.248
+Host is up (1.0s latency).
+Not shown: 13 closed tcp ports (reset)
+PORT    STATE SERVICE    VERSION
+443/tcp open  ssl/https?
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Feb 15 22:26:19 2026 -- 37 IP addresses (37 hosts up) scanned in 180.30 seconds

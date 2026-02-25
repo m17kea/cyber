@@ -1,0 +1,73 @@
+# Nmap 7.98 scan initiated Sun Feb 15 22:28:59 2026 as: /usr/lib/nmap/nmap -Pn -p22 --script ssh2-enum-algos,ssh-hostkey -oN /reports/ssh-hardening-check.txt 192.168.0.177 192.168.0.190
+Nmap scan report for 192.168.0.177
+Host is up (0.097s latency).
+
+PORT   STATE SERVICE
+22/tcp open  ssh
+| ssh2-enum-algos: 
+|   kex_algorithms: (10)
+|       mlkem768x25519-sha256
+|       sntrup761x25519-sha512
+|       sntrup761x25519-sha512@openssh.com
+|       curve25519-sha256
+|       curve25519-sha256@libssh.org
+|       ecdh-sha2-nistp256
+|       ecdh-sha2-nistp384
+|       ecdh-sha2-nistp521
+|       ext-info-s
+|       kex-strict-s-v00@openssh.com
+|   server_host_key_algorithms: (4)
+|       rsa-sha2-512
+|       rsa-sha2-256
+|       ecdsa-sha2-nistp256
+|       ssh-ed25519
+|   encryption_algorithms: (6)
+|       chacha20-poly1305@openssh.com
+|       aes128-gcm@openssh.com
+|       aes256-gcm@openssh.com
+|       aes128-ctr
+|       aes192-ctr
+|       aes256-ctr
+|   mac_algorithms: (10)
+|       umac-64-etm@openssh.com
+|       umac-128-etm@openssh.com
+|       hmac-sha2-256-etm@openssh.com
+|       hmac-sha2-512-etm@openssh.com
+|       hmac-sha1-etm@openssh.com
+|       umac-64@openssh.com
+|       umac-128@openssh.com
+|       hmac-sha2-256
+|       hmac-sha2-512
+|       hmac-sha1
+|   compression_algorithms: (2)
+|       none
+|_      zlib@openssh.com
+
+Nmap scan report for 192.168.0.190
+Host is up (0.13s latency).
+
+PORT   STATE SERVICE
+22/tcp open  ssh
+| ssh2-enum-algos: 
+|   kex_algorithms: (1)
+|       curve25519-sha256@libssh.org
+|   server_host_key_algorithms: (1)
+|       ssh-ed25519
+|   encryption_algorithms: (3)
+|       chacha20-poly1305@openssh.com
+|       aes256-ctr
+|       aes256-gcm@openssh.com
+|   mac_algorithms: (8)
+|       umac-64-etm@openssh.com
+|       umac-128-etm@openssh.com
+|       hmac-sha2-256-etm@openssh.com
+|       hmac-sha2-512-etm@openssh.com
+|       umac-64@openssh.com
+|       umac-128@openssh.com
+|       hmac-sha2-256
+|       hmac-sha2-512
+|   compression_algorithms: (2)
+|       none
+|_      zlib@openssh.com
+
+# Nmap done at Sun Feb 15 22:29:03 2026 -- 2 IP addresses (2 hosts up) scanned in 3.65 seconds
