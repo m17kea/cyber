@@ -1,19 +1,19 @@
-# Nmap 7.98 scan initiated Sun Feb 15 22:43:21 2026 as: /usr/lib/nmap/nmap -Pn -p80,443 --script ssl-enum-ciphers,ssl-cert,http-title,http-server-header,http-methods,http-enum,http-security-headers --script-timeout 25s -oN /reports/deep-192.168.0.230-web.txt 192.168.0.230
-Nmap scan report for 192.168.0.230
+# Nmap 7.98 scan initiated Sun Feb 15 22:43:21 2026 as: /usr/lib/nmap/nmap -Pn -p80,443 --script ssl-enum-ciphers,ssl-cert,http-title,http-server-header,http-methods,http-enum,http-security-headers --script-timeout 25s -oN /reports/deep-[REDACTED_PRIVATE_IP]-web.txt [REDACTED_PRIVATE_IP]
+Nmap scan report for [REDACTED_PRIVATE_IP]
 Host is up (0.047s latency).
 
 PORT    STATE SERVICE
 80/tcp  open  http
-|_http-title: Did not follow redirect to https://192.168.0.230/
+|_http-title: Did not follow redirect to https://[REDACTED_PRIVATE_IP]/
 | http-security-headers: 
 |   Cache_Control: 
 |_    Header: Cache-Control: no-cache, no-store
 | http-methods: 
 |_  Supported Methods: GET HEAD POST OPTIONS
 443/tcp open  https
-| ssl-cert: Subject: commonName=9274b27780130bfc56ad3d701205dbea/organizationName=Tesla/stateOrProvinceName=California/countryName=US
-| Subject Alternative Name: DNS:teg, DNS:powerwall, DNS:powerpack, IP Address:192.168.90.1, IP Address:192.168.90.2, IP Address:192.168.91.1
-| Issuer: commonName=9274b27780130bfc56ad3d701205dbea CA/organizationName=Tesla/stateOrProvinceName=California/countryName=US
+| ssl-cert: Subject: commonName=9274b27780130bfc56ad3d701205dbea/organizationName=[REDACTED_VENDOR]/stateOrProvinceName=California/countryName=US
+| Subject Alternative Name: DNS:[REDACTED_DEVICE], DNS:[REDACTED_DEVICE], DNS:[REDACTED_DEVICE], IP Address:[REDACTED_PRIVATE_IP], IP Address:[REDACTED_PRIVATE_IP], IP Address:[REDACTED_PRIVATE_IP]
+| Issuer: commonName=9274b27780130bfc56ad3d701205dbea CA/organizationName=[REDACTED_VENDOR]/stateOrProvinceName=California/countryName=US
 | Public Key type: ec
 | Public Key bits: 256
 | Signature Algorithm: ecdsa-with-SHA256
@@ -29,7 +29,7 @@ PORT    STATE SERVICE
 |     HSTS not configured in HTTPS Server
 |   Cache_Control: 
 |_    Header: Cache-Control: no-cache, no-store
-|_http-title: Tesla Powerwall
+|_http-title: [REDACTED_DEVICE]
 | ssl-enum-ciphers: 
 |   TLSv1.2: 
 |     ciphers: 

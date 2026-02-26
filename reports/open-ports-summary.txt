@@ -1,13 +1,13 @@
-192.168.0.156 139/tcp netbios-ssn?  
-192.168.0.156 445/tcp microsoft-ds Apple Time
-192.168.0.170 80/tcp http  
-192.168.0.176 53/tcp domain Apple device
-192.168.0.177 22/tcp ssh OpenSSH 10.2
-192.168.0.186 443/tcp ssl/https?  
-192.168.0.190 22/tcp ssh OpenSSH 8.5
-192.168.0.190 443/tcp ssl/https?  
-192.168.0.220 80/tcp http  
-192.168.0.230 443/tcp ssl/http Golang net/http
-192.168.0.230 80/tcp http Golang net/http
-192.168.0.241 8080/tcp http lighttpd 
-192.168.0.248 443/tcp ssl/https?  
+[REDACTED_PRIVATE_IP] 139/tcp netbios-ssn?  
+[REDACTED_PRIVATE_IP] 445/tcp microsoft-ds Apple Time
+[REDACTED_PRIVATE_IP] 80/tcp http  
+[REDACTED_PRIVATE_IP] 53/tcp domain Apple device
+[REDACTED_PRIVATE_IP] 22/tcp ssh OpenSSH 10.2
+[REDACTED_PRIVATE_IP] 443/tcp ssl/https?  
+[REDACTED_PRIVATE_IP] 22/tcp ssh OpenSSH 8.5
+[REDACTED_PRIVATE_IP] 443/tcp ssl/https?  
+[REDACTED_PRIVATE_IP] 80/tcp http  
+[REDACTED_PRIVATE_IP] 443/tcp ssl/http Golang net/http
+[REDACTED_PRIVATE_IP] 80/tcp http Golang net/http
+[REDACTED_PRIVATE_IP] 8080/tcp http lighttpd 
+[REDACTED_PRIVATE_IP] 443/tcp ssl/https?  

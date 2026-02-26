@@ -1,17 +1,17 @@
 # Nmap 7.98 scan initiated Sun Feb 15 22:26:17 2026 as: /usr/lib/nmap/nmap -n -Pn -sV --open --max-retries 1 --host-timeout 15s -p 21,22,23,53,80,110,139,143,443,445,3389,5900,8080,8443 -iL /reports/arp-live-hosts.txt -oN /reports/arp-targeted-services.txt
-Nmap scan report for 192.168.0.1
+Nmap scan report for [REDACTED_PRIVATE_IP]
 Host is up (0.70s latency).
-Skipping host 192.168.0.1 due to host timeout
-Nmap scan report for 192.168.0.115
+Skipping host [REDACTED_PRIVATE_IP] due to host timeout
+Nmap scan report for [REDACTED_PRIVATE_IP]
 Host is up (1.4s latency).
-Skipping host 192.168.0.115 due to host timeout
-Nmap scan report for 192.168.0.124
+Skipping host [REDACTED_PRIVATE_IP] due to host timeout
+Nmap scan report for [REDACTED_PRIVATE_IP]
 Host is up (0.74s latency).
-Skipping host 192.168.0.124 due to host timeout
-Nmap scan report for 192.168.0.146
+Skipping host [REDACTED_PRIVATE_IP] due to host timeout
+Nmap scan report for [REDACTED_PRIVATE_IP]
 Host is up (1.2s latency).
-Skipping host 192.168.0.146 due to host timeout
-Nmap scan report for 192.168.0.156
+Skipping host [REDACTED_PRIVATE_IP] due to host timeout
+Nmap scan report for [REDACTED_PRIVATE_IP]
 Host is up (0.83s latency).
 Not shown: 12 closed tcp ports (reset)
 PORT    STATE SERVICE      VERSION
@@ -19,51 +19,51 @@ PORT    STATE SERVICE      VERSION
 445/tcp open  microsoft-ds Apple Time Capsule smbd
 Service Info: Device: storage-misc
 
-Nmap scan report for 192.168.0.159
+Nmap scan report for [REDACTED_PRIVATE_IP]
 Host is up (0.83s latency).
-Skipping host 192.168.0.159 due to host timeout
-Nmap scan report for 192.168.0.162
+Skipping host [REDACTED_PRIVATE_IP] due to host timeout
+Nmap scan report for [REDACTED_PRIVATE_IP]
 Host is up.
-Skipping host 192.168.0.162 due to host timeout
-Nmap scan report for 192.168.0.170
+Skipping host [REDACTED_PRIVATE_IP] due to host timeout
+Nmap scan report for [REDACTED_PRIVATE_IP]
 Host is up (0.95s latency).
-Skipping host 192.168.0.170 due to host timeout
-Nmap scan report for 192.168.0.176
+Skipping host [REDACTED_PRIVATE_IP] due to host timeout
+Nmap scan report for [REDACTED_PRIVATE_IP]
 Host is up (0.96s latency).
 Not shown: 13 closed tcp ports (reset)
 PORT   STATE SERVICE VERSION
 53/tcp open  domain  Apple device dnsd
 
-Nmap scan report for 192.168.0.177
+Nmap scan report for [REDACTED_PRIVATE_IP]
 Host is up (0.96s latency).
 Not shown: 13 closed tcp ports (reset)
 PORT   STATE SERVICE VERSION
 22/tcp open  ssh     OpenSSH 10.2 (protocol 2.0)
 
-Nmap scan report for 192.168.0.186
+Nmap scan report for [REDACTED_PRIVATE_IP]
 Host is up (1.0s latency).
-Skipping host 192.168.0.186 due to host timeout
-Nmap scan report for 192.168.0.190
+Skipping host [REDACTED_PRIVATE_IP] due to host timeout
+Nmap scan report for [REDACTED_PRIVATE_IP]
 Host is up (0.99s latency).
-Skipping host 192.168.0.190 due to host timeout
-Nmap scan report for 192.168.0.199
+Skipping host [REDACTED_PRIVATE_IP] due to host timeout
+Nmap scan report for [REDACTED_PRIVATE_IP]
 Host is up.
-Skipping host 192.168.0.199 due to host timeout
-Nmap scan report for 192.168.0.220
+Skipping host [REDACTED_PRIVATE_IP] due to host timeout
+Nmap scan report for [REDACTED_PRIVATE_IP]
 Host is up (0.95s latency).
-Skipping host 192.168.0.220 due to host timeout
-Nmap scan report for 192.168.0.230
+Skipping host [REDACTED_PRIVATE_IP] due to host timeout
+Nmap scan report for [REDACTED_PRIVATE_IP]
 Host is up (0.023s latency).
-Skipping host 192.168.0.230 due to host timeout
-Nmap scan report for 192.168.0.241
+Skipping host [REDACTED_PRIVATE_IP] due to host timeout
+Nmap scan report for [REDACTED_PRIVATE_IP]
 Host is up (0.96s latency).
 Not shown: 13 closed tcp ports (reset)
 PORT     STATE SERVICE VERSION
 8080/tcp open  http    lighttpd
 
-Nmap scan report for 192.168.0.248
+Nmap scan report for [REDACTED_PRIVATE_IP]
 Host is up (1.1s latency).
-Skipping host 192.168.0.248 due to host timeout
+Skipping host [REDACTED_PRIVATE_IP] due to host timeout
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 # Nmap done at Sun Feb 15 22:26:51 2026 -- 37 IP addresses (37 hosts up) scanned in 33.78 seconds
 0<h1>404\x20Not\x20Found</h1>\n\x20
@@ -91,7 +91,7 @@ SF:org/1999/xhtml\"\x20xml:lang=\"en\"\x20lang=\"en\">\n\x20<head>\n\x20\x
 SF:20<title>404\x20Not\x20Found</title>\n\x20</head>\n\x20<body>\n\x20\x20
 SF:<h1>404\x20Not\x20Found</h1>\n\x20</body>\n</html>\n");
 
-Nmap scan report for 192.168.0.170
+Nmap scan report for [REDACTED_PRIVATE_IP]
 Host is up (0.84s latency).
 Not shown: 13 closed tcp ports (reset)
 PORT   STATE SERVICE VERSION
@@ -130,32 +130,32 @@ SF:0Request</b></html>")%r(Help,83,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n
 SF:Connection:\x20close\r\n\r\n<html><head><title>Nucleus\x20Server\x20Err
 SF:or</title></head><b>400:\x20Bad\x20Request</b></html>");
 
-Nmap scan report for 192.168.0.176
+Nmap scan report for [REDACTED_PRIVATE_IP]
 Host is up (0.97s latency).
 Not shown: 13 closed tcp ports (reset)
 PORT   STATE SERVICE VERSION
 53/tcp open  domain  Apple device dnsd
 
-Nmap scan report for 192.168.0.177
+Nmap scan report for [REDACTED_PRIVATE_IP]
 Host is up (1.00s latency).
 Not shown: 13 closed tcp ports (reset)
 PORT   STATE SERVICE VERSION
 22/tcp open  ssh     OpenSSH 10.2 (protocol 2.0)
 
-Nmap scan report for 192.168.0.186
+Nmap scan report for [REDACTED_PRIVATE_IP]
 Host is up (1.5s latency).
 Not shown: 13 closed tcp ports (reset)
 PORT    STATE SERVICE    VERSION
 443/tcp open  ssl/https?
 
-Nmap scan report for 192.168.0.190
+Nmap scan report for [REDACTED_PRIVATE_IP]
 Host is up (1.6s latency).
 Not shown: 12 closed tcp ports (reset)
 PORT    STATE SERVICE    VERSION
 22/tcp  open  ssh        OpenSSH 8.5 (protocol 2.0)
 443/tcp open  ssl/https?
 
-Nmap scan report for 192.168.0.220
+Nmap scan report for [REDACTED_PRIVATE_IP]
 Host is up (1.0s latency).
 Not shown: 13 closed tcp ports (reset)
 PORT   STATE SERVICE VERSION
@@ -192,7 +192,7 @@ SF:83,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n<
 SF:html><head><title>Nucleus\x20Server\x20Error</title></head><b>400:\x20B
 SF:ad\x20Request</b></html>");
 
-Nmap scan report for 192.168.0.230
+Nmap scan report for [REDACTED_PRIVATE_IP]
 Host is up (0.036s latency).
 Not shown: 12 filtered tcp ports (no-response)
 Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
@@ -233,13 +233,13 @@ SF:nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\
 SF:r\n\r\n400\x20Bad\x20Request:\x20missing\x20required\x20Host\x20header"
 SF:);
 
-Nmap scan report for 192.168.0.241
+Nmap scan report for [REDACTED_PRIVATE_IP]
 Host is up (0.90s latency).
 Not shown: 13 closed tcp ports (reset)
 PORT     STATE SERVICE VERSION
 8080/tcp open  http    lighttpd
 
-Nmap scan report for 192.168.0.248
+Nmap scan report for [REDACTED_PRIVATE_IP]
 Host is up (1.0s latency).
 Not shown: 13 closed tcp ports (reset)
 PORT    STATE SERVICE    VERSION

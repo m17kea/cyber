@@ -1,5 +1,5 @@
-# Nmap 7.98 scan initiated Sun Feb 15 22:28:59 2026 as: /usr/lib/nmap/nmap -Pn -p22 --script ssh2-enum-algos,ssh-hostkey -oN /reports/ssh-hardening-check.txt 192.168.0.177 192.168.0.190
-Nmap scan report for 192.168.0.177
+# Nmap 7.98 scan initiated Sun Feb 15 22:28:59 2026 as: /usr/lib/nmap/nmap -Pn -p22 --script ssh2-enum-algos,ssh-hostkey -oN /reports/ssh-hardening-check.txt [REDACTED_PRIVATE_IP] [REDACTED_PRIVATE_IP]
+Nmap scan report for [REDACTED_PRIVATE_IP]
 Host is up (0.097s latency).
 
 PORT   STATE SERVICE
@@ -43,7 +43,7 @@ PORT   STATE SERVICE
 |       none
 |_      zlib@openssh.com
 
-Nmap scan report for 192.168.0.190
+Nmap scan report for [REDACTED_PRIVATE_IP]
 Host is up (0.13s latency).
 
 PORT   STATE SERVICE

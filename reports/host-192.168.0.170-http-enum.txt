@@ -1,9 +1,0 @@
-# Nmap 7.98 scan initiated Sun Feb 15 22:20:59 2026 as: /usr/lib/nmap/nmap -Pn -p80 --script http-title,http-server-header,http-enum,http-security-headers -oN - 192.168.0.170
-Nmap scan report for 192.168.0.170
-Host is up (0.0072s latency).
-
-Bug in http-security-headers: no string output.
-PORT   STATE SERVICE
-80/tcp open  http
-
-# Nmap done at Sun Feb 15 22:22:45 2026 -- 1 IP address (1 host up) scanned in 106.36 seconds

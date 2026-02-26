@@ -1,5 +1,5 @@
-# Nmap 7.98 scan initiated Sun Feb 15 22:27:15 2026 as: /usr/lib/nmap/nmap -Pn -p139,445 --script smb-vuln* --script-timeout 20s -oN /reports/vuln-smb-192.168.0.156.txt 192.168.0.156
-Nmap scan report for 192.168.0.156
+# Nmap 7.98 scan initiated Sun Feb 15 22:27:15 2026 as: /usr/lib/nmap/nmap -Pn -p139,445 --script smb-vuln* --script-timeout 20s -oN /reports/vuln-smb-[REDACTED_PRIVATE_IP].txt [REDACTED_PRIVATE_IP]
+Nmap scan report for [REDACTED_PRIVATE_IP]
 Host is up (0.0057s latency).
 
 PORT    STATE SERVICE

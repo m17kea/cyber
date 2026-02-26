@@ -1,11 +1,27 @@
-# Nmap 7.98 scan initiated Sun Feb 15 22:20:12 2026 as: /usr/lib/nmap/nmap -Pn -sV --top-ports 1000 --open -oN - 192.168.0.170
-Nmap scan report for 192.168.0.170
-Host is up (1.0s latency).
-Not shown: 999 closed tcp ports (reset)
+# Nmap 7.98 scan initiated Sun Feb 15 22:19:03 2026 as: /usr/lib/nmap/nmap -sV -sC --script vuln -p80 --script-timeout 20s -oN - [REDACTED_PRIVATE_IP]
+Nmap scan report for [REDACTED_PRIVATE_IP]
+Host is up (0.0025s latency).
+
 PORT   STATE SERVICE VERSION
 80/tcp open  http
+| fingerprint-strings: 
+|   DNSStatusRequestTCP, DNSVersionBindReqTCP, GenericLines, Help, RPCCheck, RTSPRequest, X11Probe: 
+|     HTTP/1.1 400 Bad Request
+|     Connection: close
+|     <html><head><title>Nucleus Server Error</title></head><b>400: Bad Request</b></html>
+|   FourOhFourRequest, GetRequest, HTTPOptions: 
+|     HTTP/1.1 404 Not Found
+|     Content-Length: 82
+|     <html><head><title>Nucleus Server Error</title></head><b>404: Not Found</b></html>
+|   NULL: 
+|     HTTP/1.1 408 Request Timeout
+|     Connection: close
+|_    <html><head><title>Nucleus Server Error</title></head><b>408: Request Timeout</b></html>
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
 1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
-SF-Port80-TCP:V=7.98%I=7%D=2/15%Time=699246A8%P=aarch64-unknown-linux-gnu%
+SF-Port80-TCP:V=7.98%I=7%D=2/15%Time=69924667%P=aarch64-unknown-linux-gnu%
 SF:r(NULL,8B,"HTTP/1\.1\x20408\x20Request\x20Timeout\r\nConnection:\x20clo
 SF:se\r\n\r\n<html><head><title>Nucleus\x20Server\x20Error</title></head><
 SF:b>408:\x20Request\x20Timeout</b></html>")%r(GetRequest,80,"HTTP/1\.1\x2
@@ -37,4 +53,4 @@ SF:html><head><title>Nucleus\x20Server\x20Error</title></head><b>400:\x20B
 SF:ad\x20Request</b></html>");
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Sun Feb 15 22:20:48 2026 -- 1 IP address (1 host up) scanned in 35.18 seconds
+# Nmap done at Sun Feb 15 22:20:00 2026 -- 1 IP address (1 host up) scanned in 56.80 seconds

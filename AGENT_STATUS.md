@@ -1,12 +1,12 @@
-# Agent Handoff Status
+# Agent Handoff Status (Sanitized)
 
-Last updated: 2026-02-25
-Repo: /Users/michael.armitage/Documents/dev.nosync/cyber
+Last updated: 2026-02-26
+Repo: m17kea/cyber
 Branch: main
 
 ## Completed Work
 
-- Initialized this repo and connected to GitHub (`m17kea/cyber`).
+- Initialized the repository and connected it to GitHub.
 - Built a custom Kali MCP server image and linked it through Docker MCP Toolkit to Codex.
 - Added Kali MCP server code with targeted tools:
   - `run_command`
@@ -16,53 +16,44 @@ Branch: main
   - `whois_lookup`
   - `dig_lookup`
   - `ping_check`
-- Added Docker MCP custom catalog for Kali server.
-- Updated project README with setup/usage and operations instructions.
+- Added Docker MCP custom catalog for the Kali server.
+- Updated repository docs for setup, usage, and operations.
 
-## Security Assessment Work Completed
+## Security Assessment Summary (Sanitized)
 
-Network assessed: `192.168.0.0/24` (defensive scanning only).
-
-Primary findings captured:
-- `192.168.0.156`: SMB exposed (`139`, `445`), legacy SMB posture indicators.
-- `192.168.0.230`: Tesla Powerwall web interface exposed (`80`, `443`).
-- `192.168.0.241`: Web service exposed on `8080`.
-- Additional HTTP/HTTPS/SSH exposures documented in reports.
+- Defensive, authorized network assessment workflow validated.
+- Findings indicate mixed service exposure and protocol hardening opportunities.
+- Host- and network-specific identifiers were redacted for publication safety.
 
 ## Evidence and Reports
 
-All outputs are in:
-- `/Users/michael.armitage/Documents/dev.nosync/cyber/reports`
+All sanitized outputs are in:
+- `reports/`
 
-Key files:
+Representative report artifacts:
 - `reports/arp-targeted-services.txt`
 - `reports/open-ports-summary.txt`
-- `reports/vuln-smb-192.168.0.156.txt`
+- `reports/vuln-smb-redacted-host.txt`
 - `reports/vuln-web-shortlist.txt`
-- `reports/deep-192.168.0.156-smb.txt`
-- `reports/deep-192.168.0.230-web.txt`
-- `reports/deep-192.168.0.241-web8080.txt`
+- `reports/deep-redacted-host-smb.txt`
+- `reports/deep-redacted-host-web.txt`
+- `reports/deep-redacted-host-web8080.txt`
 - `reports/remediation-plan-2026-02-15.md`
 
 ## Current MCP/Docker State
 
 - Docker image: `cyber-kali-mcp:latest`
-- Docker MCP catalog file in repo: `docker-mcp-kali-catalog.yaml`
-- Codex MCP configured globally with `MCP_DOCKER` (`docker mcp gateway run`).
+- Docker MCP catalog file: `docker-mcp-kali-catalog.yaml`
+- Codex MCP globally configured with `MCP_DOCKER` (`docker mcp gateway run`).
 
 ## Recommended Next Steps
 
-1. Perform authenticated checks (requires credentials/keys) for:
-   - SMB host `192.168.0.156`
-   - Web/admin hosts `192.168.0.230` and `192.168.0.241`
-2. Apply segmentation/firewall hardening from:
-   - `reports/remediation-plan-2026-02-15.md`
-3. Re-scan after changes to verify reductions in exposed services.
+1. Continue only authorized, defensive validation against approved targets.
+2. Apply remediation and segmentation hardening from sanitized plan outputs.
+3. Re-run verification scans after control changes.
 
 ## Notes for Next Agent
 
 - Keep scanning strictly defensive and authorized.
-- Prefer host-targeted scans over broad `-Pn` sweeps to reduce false positives/noise.
-- If continuing MCP work, rebuild and re-import catalog after tool changes:
-  - `docker build -t cyber-kali-mcp:latest -f kali-mcp/Dockerfile kali-mcp`
-  - `docker mcp catalog import ./docker-mcp-kali-catalog.yaml`
+- Prefer scoped, host-targeted checks over broad sweeps.
+- If MCP tools change, rebuild image and re-import the catalog.

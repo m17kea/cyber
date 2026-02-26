@@ -1,5 +1,5 @@
-# Nmap 7.98 scan initiated Sun Feb 15 22:27:33 2026 as: /usr/lib/nmap/nmap -Pn -p80,443,8080 --script vuln,http-vuln* --script-timeout 20s --host-timeout 90s -oN /reports/vuln-web-shortlist.txt 192.168.0.170 192.168.0.186 192.168.0.190 192.168.0.220 192.168.0.230 192.168.0.241 192.168.0.248
-Nmap scan report for 192.168.0.170
+# Nmap 7.98 scan initiated Sun Feb 15 22:27:33 2026 as: /usr/lib/nmap/nmap -Pn -p80,443,8080 --script vuln,http-vuln* --script-timeout 20s --host-timeout 90s -oN /reports/vuln-web-shortlist.txt [REDACTED_PRIVATE_IP] [REDACTED_PRIVATE_IP] [REDACTED_PRIVATE_IP] [REDACTED_PRIVATE_IP] [REDACTED_PRIVATE_IP] [REDACTED_PRIVATE_IP] [REDACTED_PRIVATE_IP]
+Nmap scan report for [REDACTED_PRIVATE_IP]
 Host is up (0.25s latency).
 
 PORT     STATE  SERVICE
@@ -7,7 +7,7 @@ PORT     STATE  SERVICE
 443/tcp  closed https
 8080/tcp closed http-proxy
 
-Nmap scan report for 192.168.0.186
+Nmap scan report for [REDACTED_PRIVATE_IP]
 Host is up (0.59s latency).
 
 PORT     STATE  SERVICE
@@ -19,7 +19,7 @@ PORT     STATE  SERVICE
 |_http-dombased-xss: Couldn't find any DOM based XSS.
 8080/tcp closed http-proxy
 
-Nmap scan report for 192.168.0.190
+Nmap scan report for [REDACTED_PRIVATE_IP]
 Host is up (0.63s latency).
 
 PORT     STATE  SERVICE
@@ -31,7 +31,7 @@ PORT     STATE  SERVICE
 |_http-csrf: Couldn't find any CSRF vulnerabilities.
 8080/tcp closed http-proxy
 
-Nmap scan report for 192.168.0.220
+Nmap scan report for [REDACTED_PRIVATE_IP]
 Host is up (0.24s latency).
 
 PORT     STATE  SERVICE
@@ -42,7 +42,7 @@ PORT     STATE  SERVICE
 443/tcp  closed https
 8080/tcp closed http-proxy
 
-Nmap scan report for 192.168.0.230
+Nmap scan report for [REDACTED_PRIVATE_IP]
 Host is up (0.057s latency).
 
 PORT     STATE    SERVICE
@@ -52,7 +52,7 @@ PORT     STATE    SERVICE
 |_http-dombased-xss: Couldn't find any DOM based XSS.
 8080/tcp filtered http-proxy
 
-Nmap scan report for 192.168.0.241
+Nmap scan report for [REDACTED_PRIVATE_IP]
 Host is up (0.24s latency).
 
 PORT     STATE  SERVICE
@@ -60,7 +60,7 @@ PORT     STATE  SERVICE
 443/tcp  closed https
 8080/tcp open   http-proxy
 
-Nmap scan report for 192.168.0.248
+Nmap scan report for [REDACTED_PRIVATE_IP]
 Host is up (0.51s latency).
 
 PORT     STATE  SERVICE
